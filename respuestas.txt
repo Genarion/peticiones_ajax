@@ -1,0 +1,68 @@
+1.Inidca el significado de las constantes del objeto XMLHttpRequest
+
+   0 No inicializado (objeto creado, pero no se ha invocado el método open)
+   1 Cargando (objeto creado, pero no se ha invocado el método send)
+   2 Cargado (se ha invocado el método send, pero el servidor aún no ha respondido)
+   3 Interactivo (se han recibido algunos datos, aunque no se puede emplear la propiedad responseText)
+   4 Completo (se han recibido todos los datos de la respuesta del servidor)
+
+2.Inidca la forma de crear un objeto XMLHttpRequest hoy en día.
+
+new XMLHttpRequest();
+
+3.Métodos manejadores de eventos. Indica su utilidad.
+
+   - abort()	Detiene la petición actual
+   - getAllResponseHeaders() Devuelve una cadena de texto con todas las cabeceras de la respuesta del servidor
+   - getResponseHeader("cabecera") Devuelve una cadena de texto con el contenido de la cabecera solicitada
+   - onreadystatechange Responsable de manejar los eventos que se producen. Se invoca cada vez que se produce un cambio en el estado de la petición HTTP. Normalmente es una referencia a una función JavaScript
+   - open("metodo", "url") Establece los parámetros de la petición que se realiza al servidor. Los parámetros necesarios son el método HTTP empleado y la URL destino (puede indicarse de forma absoluta o relativa)
+   - send(contenido) Realiza la petición HTTP al servidor
+   - setRequestHeader("cabecera", "valor")	Permite establecer cabeceras personalizadas en la petición HTTP. Se debe invocar el método open() antes que setRequestHeader()
+
+4.Respuestas del servidor (aparte de 200) 5.Indica las distintas respuestas del servidor.
+
+200 OK
+201 Created
+202 Accepted
+203 Non-Authoritative Information
+204 No Content
+205 Reset Content
+206 Partial Content
+
+300 Multiple Choices
+301 Moved Permanently
+302 Found	The requested page has moved temporarily to a new URL 
+303 See Other
+304 Not Modified
+306 Switch Proxy
+307 Temporary Redirect
+308 Resume Incomplete
+
+400 Bad Request
+401 Unauthorized
+402 Payment Required
+403 Forbidden
+404 Not Found
+405 Method Not Allowed
+406 Not Acceptable
+407 Proxy Authentication Required
+408 Request Timeout	
+409 Conflict
+410 Gone
+411 Length Required	
+412 Precondition Failed
+413 Request Entity Too Large
+414 Request-URI Too Long
+415 Unsupported Media Type
+416 Requested Range Not Satisfiable
+417 Expectation Failed
+
+500 Internal Server Error
+501 Not Implemented	
+502 Bad Gateway
+503 Service Unavailable
+504 Gateway Timeout
+505 HTTP Version Not Supported
+511 Network Authentication Required
+
